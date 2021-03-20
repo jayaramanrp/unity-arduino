@@ -13,13 +13,6 @@ bool lastButtonState = 0;
  void setup() { 
    pinMode (outputA,INPUT);
    pinMode (outputB,INPUT);
-   
-   // BUTTON (A1) is for INPUT
-  // Most pin has thier own pull-up resistor.
-  // INPUT_PULLUP makes the pin high.
-  // a leg of button is connected with this pin and GND
-  // when the button is not pressed, the pin reads HIGH signal because of this PULL-UP
-  // when the button is pressed, pin is going to be LOW which means "pressed"
    pinMode(BUTTON, INPUT_PULLUP);
      
    pinMode(PIN_5V, OUTPUT);
